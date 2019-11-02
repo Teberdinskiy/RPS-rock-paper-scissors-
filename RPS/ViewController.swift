@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet var paperLabel: UIButton!
     @IBOutlet var playLabel: UIButton!
     
+    var currentGameState = GameState.start
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,9 +45,9 @@ class ViewController: UIViewController {
         let opponent = randomSign()
         computerLabel.text = opponent.emoji
         
-        let gameResult = playerTurn.takeTurn(opponent)
+       currentGameState = playerTurn.takeTurn(opponent)
         
-        switch gameResult {
+        switch currentGameState {
         case .draw:
             statusLabel.text = "it's a draw"
         case .lose:
