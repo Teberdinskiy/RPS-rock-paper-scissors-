@@ -63,7 +63,7 @@
                                         <rect key="frame" x="96" y="250" width="125" height="93"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                         <state key="normal" title="Play again">
-                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         </state>
                                         <connections>
                                             <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mye-Qg-pb4"/>
