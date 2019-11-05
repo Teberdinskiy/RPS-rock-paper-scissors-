@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     func resetBoard() {
         computerLabel.text = "🦄"
-        statusLabel.text = "Камень, ножницы, бумага?"
+        statusLabel.text = "Rock, Paper, Scissors?"
         rockLabel.isHidden = false
         rockLabel.isEnabled = true
         paperLabel.isHidden = false
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         let opponent = randomSign()
         computerLabel.text = opponent.emoji
         
-       currentGameState = playerTurn.takeTurn(opponent)
+        currentGameState = playerTurn.takeTurn(opponent)
         
         switch currentGameState {
         case .draw:
