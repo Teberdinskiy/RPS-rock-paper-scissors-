@@ -19,8 +19,8 @@
                                 <rect key="frame" x="48.5" y="276.5" width="317" height="343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="🦄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlY-PR-Tyd">
-                                        <rect key="frame" x="121" y="0.0" width="75" height="93.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                        <rect key="frame" x="104.5" y="0.0" width="108" height="93.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>

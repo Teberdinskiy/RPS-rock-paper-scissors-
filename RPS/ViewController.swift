@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     func resetBoard() {
         computerLabel.text = "🦄"
-        statusLabel.text = "Rock, Paper, Scissors?"
+        statusLabel.text = "Камень, ножницы, бумага?"
         rockLabel.isHidden = false
         rockLabel.isEnabled = true
         paperLabel.isHidden = false
@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         scissorsLabel.isHidden = false
         scissorsLabel.isEnabled = true
         playLabel.isHidden = true
+        self.view.backgroundColor = UIColor.white
     }
     
     func play(_ playerTurn: Sign) {
@@ -52,8 +53,10 @@ class ViewController: UIViewController {
             statusLabel.text = "it's a draw"
         case .lose:
             statusLabel.text = "sorry, you lose"
+            self.view.backgroundColor = UIColor.red
         case .win:
             statusLabel.text = "You win!"
+            self.view.backgroundColor = UIColor.green
         case .start:
             statusLabel.text = "Rock, Paper, Scissors?"
         }
